@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJD Shop - Buy Now</title>
+    <link rel="stylesheet"href=/'buy now.css'>
+</head>
+<body>
+    <header>
+        <h1>Complete Your Purchase</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="checkout">
+            <h2>Billing Information</h2>
+            <form id="billing-form" method="POST" action="/process_payment">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+                
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <h2>Payment Options</h2>
+                <label>
+                    <input type="radio" name="payment-method" value="UPI" required>
+                    UPI
+                </label>
+                <label>
+                    <input type="radio" name="payment-method" value="Card" required>
+                    Card Payment
+                </label>
+                <label>
+                    <input type="radio" name="payment-method" value="COD" required>
+                    Cash on Delivery
+                </label>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 AJD. All rights reserved.</p>
+    </footer>
+    <script src="buy now.js"></script>
+</body>
+</html>
